@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tivi Player</title>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js">
+  	</script>
+  	<style>
+  		body{
+  			margin: 0px;
+  		}
+  	</style>
+</head>
+<body>
+	<div id="player"></div>
+	<script>
+		var player = new Clappr.Player({
+			source: "https://teleamazonas-live.cdn.vustreams.com/live/0fc97608-6057-4db8-9af7-102c21ac18af/live.isml/0fc97608-6057-4db8-9af7-102c21ac18af.m3u8"
+			,parentId: "#player"
+			,width: window.innerWidth
+			,height: window.innerHeight
+		});
+	</script>
+</body>
+</html>
